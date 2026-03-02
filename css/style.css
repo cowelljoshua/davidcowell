@@ -29,6 +29,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  height: 100%;
 }
 
 body {
@@ -37,6 +38,9 @@ body {
   line-height: 1.7;
   background: var(--white);
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5 {
@@ -138,11 +142,11 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 36px;
   max-width: none;
   width: fit-content;
   margin: 0;
-  padding: 8px 48px;
+  padding: 6px 32px;
   /* Glassmorphism effect */
   background: rgba(27, 58, 92, 0.35);
   backdrop-filter: blur(16px);
@@ -156,16 +160,17 @@ ul { list-style: none; }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: var(--white);
   font-weight: 700;
-  padding: 8px 16px;
-  border-radius: 25px;
+  padding: 6px 14px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
 .nav-logo:hover { 
   color: var(--white);
@@ -176,6 +181,7 @@ ul { list-style: none; }
 .nav-logo span { 
   color: var(--gold);
   transition: all 0.3s ease;
+  margin-left: 1px;
 }
 .nav-logo:hover span {
   color: #ffd966;
@@ -189,9 +195,9 @@ ul { list-style: none; }
 }
 .nav-links li a {
   color: rgba(255,255,255,0.8);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  padding: 8px 0;
+  padding: 6px 0;
   position: relative;
   letter-spacing: 0.01em;
   transition: all 0.2s ease;
@@ -219,8 +225,8 @@ ul { list-style: none; }
 .nav-links li a.nav-cta {
   background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
   color: var(--white);
-  padding: 10px 24px;
-  border-radius: 25px;
+  padding: 8px 20px;
+  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 16px rgba(58, 124, 195, 0.3);
 }
@@ -332,7 +338,8 @@ ul { list-style: none; }
    SECTIONS
    ============================================================ */
 .section {
-  padding: 100px 0;
+  padding: 120px 0 100px;
+  flex: 1 0 auto;
 }
 .section-alt {
   background: var(--off-white);
@@ -827,8 +834,9 @@ ul { list-style: none; }
   background: var(--dark);
   color: rgba(255,255,255,.5);
   text-align: center;
-  padding: 28px 0;
+  padding: 32px 0;
   font-size: .85rem;
+  margin-top: auto;
 }
 
 /* ============================================================
