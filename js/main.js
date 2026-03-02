@@ -4,28 +4,35 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ---- Navbar scroll effect ----
+  // ---- Navbar (no scroll effect for floating navbar) ----
   const navbar = document.getElementById('navbar');
-  const onScroll = () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
-  };
-  window.addEventListener('scroll', onScroll);
-  onScroll();
 
   // ---- Mobile menu toggle ----
   const toggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-
-  // Close menu when a link is clicked
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      toggle.classList.toggle('open');
     });
-  });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('open');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target)) {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('open');
+      }
+    });
+  }
 
   // ---- Project filter buttons ----
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -47,19 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
           setTimeout(() => card.style.display = 'none', 300);
         }
       });
-    });
-  });
-
-  // ---- Smooth scroll for anchor links (fallback) ----
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', (e) => {
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        const offset = navbar.offsetHeight;
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
     });
   });
 
@@ -98,23 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- Active nav link highlight on scroll ----
-  const sections = document.querySelectorAll('section[id]');
-  const highlightNav = () => {
-    const scrollY = window.scrollY + 100;
-    sections.forEach(section => {
-      const top = section.offsetTop - 80;
-      const bottom = top + section.offsetHeight;
-      const id = section.getAttribute('id');
-      const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-      if (link) {
-        if (scrollY >= top && scrollY < bottom) {
-          link.classList.add('active-link');
-        } else {
-          link.classList.remove('active-link');
-        }
-      }
-    });
-  };
-  window.addEventListener('scroll', highlightNav);
+  // ---- Add active class to current page nav link ----
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinkElements = document.querySelectorAll('.nav-links a');
+  navLinkElements.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
+      link.classList.add('active');
+    }
+  });
 });
