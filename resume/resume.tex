@@ -1,0 +1,289 @@
+%===============================================================================
+% DAVID COWELL, PE — Professional Resume
+% Compiled with: pdflatex resume.tex (or xelatex/lualatex)
+%===============================================================================
+\documentclass[11pt, letterpaper]{article}
+
+%----------- PACKAGES -----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=0.65in, top=0.55in, bottom=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{fontawesome5}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{microtype}
+
+%----------- COLORS -----------
+\definecolor{navy}{HTML}{1B3A5C}
+\definecolor{blue}{HTML}{3A7CC3}
+\definecolor{gold}{HTML}{C9A84C}
+\definecolor{darkgray}{HTML}{2D3748}
+\definecolor{medgray}{HTML}{718096}
+\definecolor{lightgray}{HTML}{E8ECF1}
+
+%----------- HYPERLINKS -----------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  pdfauthor={David Cowell, PE},
+  pdftitle={David Cowell, PE — Resume},
+}
+
+%----------- HEADER/FOOTER -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{medgray} David Cowell, PE \;\textbar\; \href{https://davidcowell.com}{davidcowell.com} \;\textbar\; Page \thepage}
+
+%----------- SECTION FORMATTING -----------
+\titleformat{\section}
+  {\Large\bfseries\color{navy}\scshape}
+  {}{0em}{}
+  [\vspace{-6pt}{\color{gold}\rule{\textwidth}{1.5pt}}]
+
+\titleformat{\subsection}[runin]
+  {\bfseries\color{navy}}
+  {}{0em}{}
+
+\titlespacing*{\section}{0pt}{16pt}{8pt}
+\titlespacing*{\subsection}{0pt}{6pt}{4pt}
+
+%----------- LIST SETTINGS -----------
+\setlist[itemize]{
+  leftmargin=16pt,
+  itemsep=2pt,
+  parsep=0pt,
+  topsep=4pt,
+  label={\color{blue}\textbullet}
+}
+
+%----------- CUSTOM COMMANDS -----------
+% Job entry: \job{Title}{Organization}{Location}{Dates}
+\newcommand{\job}[4]{%
+  \vspace{6pt}
+  \noindent
+  \textbf{\large\color{navy}#1} \hfill {\color{blue}\small #4} \\[1pt]
+  {\color{darkgray}#2} \hfill {\color{medgray}\small #3}
+  \vspace{2pt}
+}
+
+% Client entry: \client{Name}{Location}{Description}
+\newcommand{\client}[3]{%
+  \vspace{4pt}
+  \noindent\textbf{\color{navy}#1} \hfill {\color{medgray}\small #2} \\[1pt]
+  {\small\color{darkgray}#3}
+  \vspace{2pt}
+}
+
+% Project entry: \project{Name}{Category}{Year}{Cost}{Description}
+\newcommand{\project}[5]{%
+  \vspace{4pt}
+  \noindent\textbf{\color{navy}#1} \hfill {\color{blue}\small #2 \;\textbar\; #3 \;\textbar\; #4} \\[1pt]
+  {\small\color{darkgray}#5}
+  \vspace{2pt}
+}
+
+%===============================================================================
+\begin{document}
+
+%----------- NAME BLOCK -----------
+\begin{center}
+  {\fontsize{28}{34}\selectfont\bfseries\color{navy} David Cowell\color{gold}, PE}
+
+  \vspace{8pt}
+
+  {\large\color{darkgray} Director of Engineering}
+
+  \vspace{10pt}
+
+  \begin{tabular}{c@{\quad\color{lightgray}\textbar\quad}c@{\quad\color{lightgray}\textbar\quad}c@{\quad\color{lightgray}\textbar\quad}c}
+    \faPhone\ \href{tel:9104315906}{(910) 431-5906} &
+    \faEnvelope\ \href{mailto:davidericcowell@gmail.com}{davidericcowell@gmail.com} &
+    \faMapMarker*\ Leland, NC 28451 &
+    \faGlobe\ \href{https://davidcowell.com}{davidcowell.com}
+  \end{tabular}
+\end{center}
+
+\vspace{4pt}
+
+%----------- PROFESSIONAL SUMMARY -----------
+\section{Professional Summary}
+
+A licensed Professional Engineer with over three decades of progressive experience in public infrastructure planning, design, and construction management. Began municipal engineering with 14 years in private consulting at Van Cleef Engineering Associates, providing water and wastewater engineering services to municipalities in New Jersey and Pennsylvania. Since joining the City of Wilmington in 2001, served in increasingly responsible roles---from Project Engineer to Director of Engineering---overseeing more than \textbf{\$250 million} of public infrastructure design and construction during the last decade. Holds PE licenses in three states and has directed cross-functional teams of up to 66 professionals.
+
+%----------- AREAS OF EXPERTISE -----------
+\section{Areas of Expertise}
+
+\vspace{2pt}
+\begin{multicols}{2}
+\begin{itemize}[itemsep=3pt]
+  \item \textbf{Capital Project Management} --- Over \$250M in public infrastructure capital projects including streets, buildings, parks, bridges, trails, and stormwater systems
+  \item \textbf{Water \& Wastewater Engineering} --- Pumping, storage, distribution, collection, treatment, and disposal system design for public and private utilities
+  \item \textbf{Riverfront \& Urban Design} --- Riverwalk design, bulkhead replacement, foundation repair, and integration of historic and modern urban design elements
+  \item \textbf{Strategic Planning} --- Facilities Master Plans, Capital Improvement Plans, budgets, strategic business plans, and rate schedule development
+  \item \textbf{Construction Management} --- Construction inspection, contract administration, Right-of-Way permitting, and quality assurance for public and private development
+  \item \textbf{Engineering Software} --- WaterCAD, AutoCAD, KY Surge, 3D visualizations and computer modeling for infrastructure analysis and design
+\end{itemize}
+\end{multicols}
+
+%----------- PROFESSIONAL EXPERIENCE -----------
+\section{Professional Experience}
+
+\job{Director of Engineering}{City of Wilmington, NC}{Wilmington, NC}{Sep 2015 -- Present}
+\begin{itemize}
+  \item Served as Project Director for over \$250M worth of public infrastructure capital projects since 2014, including streets, public buildings, parks, bridges, trails, riverfront, and stormwater projects.
+  \item Led the Administration, Project Management, Plan Review, Geomatics, Capital Project Design, Construction Management, and Traffic Engineering teams with a total staff of 66 full-time positions.
+  \item Prepared department budgets, strategic business plans, policies, reports, 3D visualizations, and presentations.
+\end{itemize}
+
+\job{City Engineer}{City of Wilmington, NC}{Wilmington, NC}{Jun 2007 -- Aug 2015}
+\begin{itemize}
+  \item Served as Project Manager and/or Project Director for public infrastructure capital projects.
+  \item Led the Administration, Project Management, Plan Review, Geomatics, Capital Project Design, and Construction Management teams with a total staff of 30 full-time positions.
+\end{itemize}
+
+\job{Construction Manager}{City of Wilmington, NC}{Wilmington, NC}{Nov 2002 -- May 2007}
+\begin{itemize}
+  \item Served as Project Manager for public infrastructure capital projects.
+  \item Supervised construction inspection for capital improvement and private development projects.
+  \item Managed the Right-of-Way Permit program.
+\end{itemize}
+
+\job{Project Engineer}{City of Wilmington, NC}{Wilmington, NC}{Oct 2001 -- Oct 2002}
+\begin{itemize}
+  \item Reviewed designs of water and wastewater systems for the 1995 and 1998 annexation service plans.
+\end{itemize}
+
+\job{Professional Engineer}{Van Cleef Engineering Associates}{Hamilton Square, NJ}{Jul 1987 -- Sep 2001}
+\begin{itemize}
+  \item Served as Consulting Engineer for the Robbinsville Township Public Works Department (Mercer County, NJ), Washington Twp MUA, and Richland Twp Water Authority (Bucks County, PA).
+  \item Authored utilities authority regulations, rate schedules, maintenance, and planning documents.
+  \item Designed water supply pumping, storage, and distribution systems.
+  \item Designed wastewater pumping, collection, and disposal systems.
+\end{itemize}
+
+\job{Engineering Associate}{Douglas Hildenbrant, PE}{Pomona, CA}{Jun 1986 -- Jun 1987}
+\begin{itemize}
+  \item Assisted with forensic structural investigation and foundation repair.
+\end{itemize}
+
+%----------- CONSULTING ENGINEERING CLIENTS -----------
+\section{Consulting Engineering Clients}
+
+{\small\color{medgray}\textit{Primary public utility clients served through Van Cleef Engineering Associates}}
+
+\vspace{4pt}
+
+\client{Richland Township Water Authority}{Bucks County, PA}{Consulting Engineer for newly created municipal water authority. Developed a Facilities Master Plan involving analysis of zoning densities and forecast of future water demands; computer modeling of proposed infrastructure using WaterCAD software; and preparation of a phasing plan for staged construction.}
+
+\client{Washington Township Municipal Utilities Authority}{Mercer County, NJ}{Consulting Engineer to municipal sewerage authority. Authored Rules and Regulations; Facilities Plan; Capital Improvement Plan; Renewal and Replacement Plan; and Feasibility Studies. Developed \& implemented Off-Tract Improvement Fee program.}
+
+\client{Hopewell Township Public Works Department}{Mercer County, NJ}{Lead design engineer responsible for establishing guidelines and coordinating work of multiple offices for the Hopewell-Trenton Sewer System project including a regional pump station with a 9-mile dual force main.}
+
+\client{Morris County Municipal Utilities Authority}{Morris County, NJ}{Computer modeling of regional water distribution system as the basis of design for two booster pumping stations; a transmission main; and an elevated finished water storage tank.}
+
+\client{Stockton Borough: Water System Improvements}{Hunterdon County, NJ}{Design and permitting for public water supply system modifications comprised of well; control building; booster station; standpipe; treatment; pressure control valve vaults; and distribution system.}
+
+\client{Jensen's Deep Run Adult Village}{Ocean County, NJ}{Design, permitting, and administration of construction contracts for a public community water supply system comprised of four wells, control buildings, ground storage tanks, treatment system, and distribution system.}
+
+\newpage
+
+%----------- FEATURED PROJECTS -----------
+\section{Featured Projects --- Wilmington Riverfront \& Public Infrastructure}
+
+\project{Port City Marina Riverwalk}{Riverfront}{2021}{\$5,533,309}{Public/private partnership extending the Riverwalk to the foot of Hamlet St. Concrete roadway, dock, and plaza infrastructure built along the north side of the marina south of Water St.}
+
+\project{Water Street: Princess St to Walnut St}{Infrastructure}{2021}{\$4,719,000}{Riverwalk widened along Water Street near the Coast Guard dock. Construction coordinated with the Water St. Parking Deck redevelopment.}
+
+\project{Hilton Bulkhead \& Riverwalk}{Riverfront}{2008}{\$4,210,227}{During demolition of the original beachwalk, the old bulkhead began to fail. Steel bulkhead and pile-supported timber boardwalk construction with emergency pool rescue.}
+
+\project{Harnett St./Cowan St. Riverwalk}{Riverfront}{2017}{\$2,250,006}{Long-awaited connection to the Dean Hardwoods Riverwalk at Sawmill Point. Pile-supported timber boardwalk (approx.\ 1,100 ft).}
+
+\project{Water St Park: Market St Intersection}{Infrastructure}{2017}{\$2,300,000}{Recreation of Water Street Park born from major improvement projects at the Market Street intersection. Streetscape \& utilities from Market St.\ to Princess St.; pier reconstruction.}
+
+\project{Convention Center Riverwalk}{Riverfront}{2017}{\$1,939,456}{Riverwalk wrapping around the Convention Center as an integral feature. Careful design preserved a 400+ year old Live Oak tree. Multiple phases: 2011, 2013, 2017.}
+
+\project{Visitor Center Bulkhead}{Riverfront}{2009}{\$1,174,724}{Emergency response to sinkhole under Water Street. Underground investigation revealed undermined concrete retaining wall; new steel bulkhead installed.}
+
+\project{Dean Hardwoods Riverwalk}{Riverfront}{2010}{\$1,143,822}{Reaching through the tidal marsh to the Isabel Holmes Bridge. Pile-supported timber boardwalk (approx.\ 820 ft).}
+
+\project{Brooks Building Riverwalk}{Riverfront}{2017}{\$1,002,007}{Deteriorated concrete demolished and replaced by a free-standing pile-supported timber boardwalk.}
+
+\project{Market Street Wharf Foundation Repair}{Riverfront}{2013}{\$970,565}{Corroded steel piles supporting heavy concrete platform had begun to buckle. Pedestrian platform reconstruction.}
+
+\project{Coastline Inn Bulkhead}{Riverfront}{2017}{\$772,000}{Steel bulkhead and boardwalk reconstruction replacing 1998 timber decking and benches.}
+
+\project{Pocket Parks Shoreline Stabilization}{Parks}{2013}{\$565,573}{Soil stabilization at Mulder's Alley Pocket Park and Ann Street. Failed concrete bulkhead remediation.}
+
+\project{Conlon Pier Cofferdam Repair}{Riverfront}{2020}{\$505,000}{Pedestrian observation platform reconstruction due to severe corrosion of steel walls.}
+
+\project{Visitor Center Park}{Parks}{2022}{\$373,000}{Park renovation with new play area elements, restored river views, enhanced public safety, and nautical flags.}
+
+\project{Governor's Landing Bulkhead Replacement}{Riverfront}{2008}{\$311,890}{New steel bulkhead replacing original developer-installed timber bulkhead.}
+
+\project{Conlon Pier Riverwalk: Olde Port}{Riverfront}{2002--2013}{\$1,250,000}{Pier renovation \& Riverwalk extension from Coastline Inn southward.}
+
+%----------- EDUCATION -----------
+\section{Education}
+
+\vspace{4pt}
+
+\noindent
+\textbf{\large\color{navy}California State Polytechnic University} \hfill {\color{blue}\small June 1986} \\[1pt]
+{\color{darkgray}Bachelor of Science: Civil Engineering} \hfill {\color{medgray}\small Pomona, CA} \\[1pt]
+{\color{gold}\small Magna Cum Laude}
+
+\vspace{10pt}
+
+\noindent
+\textbf{\large\color{navy}Rutgers University Graduate School} \hfill {\color{blue}\small Sep 1999 -- Jun 2000} \\[1pt]
+{\color{darkgray}Advanced Water Supply \& Sewerage \;\textbar\; Water Treatment Plant Design} \hfill {\color{medgray}\small New Brunswick, NJ} \\[1pt]
+{\color{gold}\small Non-Matriculated (GPA 4.00)}
+
+%----------- PROFESSIONAL REGISTRATION -----------
+\section{Professional Registration}
+
+\vspace{4pt}
+
+\begin{tabularx}{\textwidth}{X r}
+  \textbf{\color{navy}New Jersey} --- Professional Engineer & {\color{blue}1994} \\[6pt]
+  \textbf{\color{navy}Pennsylvania} --- Professional Engineer & {\color{blue}1995} \\[6pt]
+  \textbf{\color{navy}North Carolina} --- Professional Engineer & {\color{blue}2002} \\
+\end{tabularx}
+
+%----------- REFERENCES -----------
+\section{References}
+
+\vspace{4pt}
+
+\begin{tabularx}{\textwidth}{@{}X X X@{}}
+  \textbf{\color{navy}Thom Moton} &
+  \textbf{\color{navy}Denise Freund} &
+  \textbf{\color{navy}EB Pannkuk} \\[2pt]
+
+  {\small Deputy City Manager} &
+  {\small Deputy Director of Engineering} &
+  {\small Owner} \\
+
+  {\small\color{medgray} City of Wilmington, NC} &
+  {\small\color{medgray} Forsyth County, Georgia} &
+  {\small\color{medgray} Stature Engineering} \\[4pt]
+
+  {\small \faPhone\ \href{tel:2527028553}{(252) 702-8553}} &
+  {\small \faPhone\ \href{tel:9108992054}{(910) 899-2054}} &
+  {\small \faPhone\ \href{tel:9106225261}{(910) 622-5261}} \\
+
+  {\small \faEnvelope\ \href{mailto:tmmjtx@sbcglobal.net}{tmmjtx@sbcglobal.net}} &
+  {\small \faEnvelope\ \href{mailto:dlfreund1992@gmail.com}{dlfreund1992@gmail.com}} &
+  {\small \faEnvelope\ \href{mailto:statureengineering@yahoo.com}{statureengineering@yahoo.com}} \\
+\end{tabularx}
+
+\end{document}
