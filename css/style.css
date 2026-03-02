@@ -313,7 +313,7 @@ ul { list-style: none; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: url('../images/landing_page.png') center/cover no-repeat;
+  background: url('../images/landing_page.JPG') center/cover no-repeat;
   opacity: .3;
 }
 
