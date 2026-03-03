@@ -83,7 +83,7 @@ ul { list-style: none; }
 }
 
 .section > .container {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 /* ---------- Placeholder Images ---------- */
@@ -1328,6 +1328,7 @@ ul { list-style: none; }
   .hero-content h1 { font-size: 2.6rem; }
   .hero-subtitle  { font-size: 1.1rem; }
   .section { padding: 120px 0 80px; min-height: auto; }
+  .section > .container { padding-top: 20px; }
   .section-title { font-size: 2rem; }
 
   /* Larger scroll arrow on mobile */
