@@ -159,10 +159,10 @@ ul { list-style: none; }
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 36px;
-  max-width: none;
-  width: fit-content;
+  max-width: 1400px;
+  width: 100%;
   margin: 0;
   padding: 6px 32px;
   /* Glassmorphism effect */
@@ -210,6 +210,9 @@ ul { list-style: none; }
   gap: 32px;
   align-items: center;
   list-style: none;
+  flex: 1;
+  justify-content: center;
+  margin-right: 200px;
 }
 .nav-links li a {
   color: rgba(255,255,255,0.8);
@@ -406,6 +409,11 @@ ul { list-style: none; }
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
+}
+.section.section-dark#contact,
+.section.section-dark#education {
+  align-items: center;
+  padding: 100px 0;
 }
 .section-alt {
   background: var(--off-white);
@@ -1274,6 +1282,9 @@ ul { list-style: none; }
   gap: 80px;
   margin-top: 48px;
   flex-wrap: wrap;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-item {
