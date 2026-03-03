@@ -1136,6 +1136,11 @@ ul { list-style: none; }
   border-bottom: 2px solid var(--light-gray);
 }
 
+.section-dark .edu-heading {
+  color: var(--white);
+  border-bottom-color: rgba(255,255,255,.2);
+}
+
 .edu-card {
   background: var(--white);
   padding: 28px 32px;
@@ -1330,7 +1335,7 @@ ul { list-style: none; }
   text-align: center;
   padding: 20px 0;
   font-size: .85rem;
-  margin-top: 80px;
+  margin-top: auto;
   border-top: 1px solid rgba(255,255,255,.05);
 }
 
