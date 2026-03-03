@@ -356,6 +356,10 @@ ul { list-style: none; }
   flex-wrap: wrap;
 }
 
+#hero-menu-btn {
+  display: none;
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
@@ -1248,6 +1252,9 @@ ul { list-style: none; }
   }
   .nav-toggle {
     display: flex;
+  }
+  #hero-menu-btn {
+    display: inline-block;
   }
   .nav-links {
     position: fixed;
