@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Work | David Cowell, PE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">D<span>C</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="projects.html" class="active">Project Management</a></li>
+        <li><a href="water-wastewater.html">Water / Wastewater</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== SAMPLE WORK ===================== -->
+  <section id="sample-work" class="section">
+    <div class="container">
+      <a href="projects.html" class="back-link">&larr; Back to Project Management</a>
+      <h2 class="section-title">Sample Work</h2>
+      <p class="section-subtitle">Project examples and visualizations</p>
+
+      <div class="sample-work-grid">
+        
+        <!-- YouTube Video -->
+        <div class="sample-item video-item">
+          <h3>3D Visualization</h3>
+          <a href="https://youtu.be/B883jaxhDIQ" target="_blank" rel="noopener noreferrer" class="video-link">
+            <img src="images/sample-work-youtube-thumb.png" alt="3D Visualization Video" class="video-thumbnail">
+            <div class="play-overlay">
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="40" fill="rgba(255,255,255,0.9)"/>
+                <path d="M32 25L55 40L32 55V25Z" fill="#4A90E2"/>
+              </svg>
+            </div>
+          </a>
+          <p class="sample-description">Click to watch the 3D project visualization on YouTube</p>
+        </div>
+
+        <!-- Excel Download -->
+        <div class="sample-item document-item">
+          <h3>Excel Spreadsheet</h3>
+          <div class="document-preview">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="15" width="60" height="70" fill="#217346" rx="4"/>
+              <text x="50" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">XLS</text>
+            </svg>
+          </div>
+          <a href="sample_work/sample-work-excel.xls" download class="download-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 14L5 9h3V3h4v6h3l-5 5z" fill="currentColor"/>
+              <path d="M17 17H3v-2h14v2z" fill="currentColor"/>
+            </svg>
+            Download Excel File
+          </a>
+          <p class="sample-description">Project data and calculations</p>
+        </div>
+
+        <!-- PowerPoint Download -->
+        <div class="sample-item document-item">
+          <h3>PowerPoint Presentation</h3>
+          <div class="document-preview">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="15" width="60" height="70" fill="#D24726" rx="4"/>
+              <text x="50" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">PPT</text>
+            </svg>
+          </div>
+          <a href="sample_work/sample-work-powerpoint.pptx" download class="download-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 14L5 9h3V3h4v6h3l-5 5z" fill="currentColor"/>
+              <path d="M17 17H3v-2h14v2z" fill="currentColor"/>
+            </svg>
+            Download PowerPoint
+          </a>
+          <p class="sample-description">Project presentation slides</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2026 David Cowell, PE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

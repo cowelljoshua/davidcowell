@@ -802,6 +802,125 @@ ul { list-style: none; }
 }
 
 /* ============================================================
+   SAMPLE WORK PAGE
+   ============================================================ */
+.sample-work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.sample-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  text-align: center;
+}
+
+.sample-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.sample-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+/* Video Item */
+.video-item .video-link {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.video-item .video-link:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform var(--transition), opacity var(--transition);
+  opacity: 0.9;
+}
+
+.video-item .video-link:hover .play-overlay {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+/* Document Items */
+.document-preview {
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background var(--transition), transform var(--transition);
+  margin-bottom: 16px;
+}
+
+.download-btn:hover {
+  background: var(--blue-light);
+  transform: translateY(-2px);
+}
+
+.sample-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sample-work-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .sample-item {
+    padding: 24px;
+  }
+  
+  .play-overlay svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ============================================================
    WATER / WASTEWATER INTRO
    ============================================================ */
 .ww-intro {
