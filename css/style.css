@@ -407,10 +407,10 @@ ul { list-style: none; }
   display: flex;
   align-items: flex-start;
 }
-.section.section-dark#contact,
-.section.section-dark#education {
+.section.section-dark#contact {
   align-items: center;
-  padding: 100px 0;
+  justify-content: center;
+  padding: 120px 0 60px;
 }
 .section-alt {
   background: var(--off-white);
