@@ -453,6 +453,44 @@ ul { list-style: none; }
 }
 
 /* ============================================================
+   EXPERTISE (Areas of Expertise on landing page)
+   ============================================================ */
+.expertise-summary {
+  margin-top: 80px;
+}
+
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.expertise-item {
+  background: var(--white);
+  padding: 28px 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--light-gray);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.expertise-item:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue);
+}
+.expertise-item h4 {
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.expertise-item p {
+  font-size: .88rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ============================================================
    TIMELINE (Experience)
    ============================================================ */
 .timeline {
@@ -1158,6 +1196,8 @@ ul { list-style: none; }
   }
   .about-photo { max-width: 300px; margin: 0 auto; }
   .about-stats { grid-template-columns: repeat(2, 1fr); }
+  .expertise-list { grid-template-columns: 1fr; }
+  .subpage-cards { grid-template-columns: 1fr; }
   .education-grid { grid-template-columns: 1fr; gap: 32px; }
   .contact-grid  { grid-template-columns: 1fr; gap: 40px; }
 }
