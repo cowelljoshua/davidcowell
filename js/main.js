@@ -7,6 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Navbar (no scroll effect for floating navbar) ----
   const navbar = document.getElementById('navbar');
 
+  // ---- Scroll indicator ----
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
   // ---- Mobile menu toggle ----
   const toggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
