@@ -318,6 +318,7 @@ ul { list-style: none; }
   inset: 0;
   background: url('../images/landing_page.JPG') center/cover no-repeat;
   opacity: .3;
+  z-index: 1;
 }
 
 .hero-content {
@@ -357,7 +358,7 @@ ul { list-style: none; }
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: 10;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -367,10 +368,11 @@ ul { list-style: none; }
 .scroll-arrow {
   width: 28px;
   height: 28px;
-  border-right: 3px solid rgba(255, 255, 255, 0.85);
-  border-bottom: 3px solid rgba(255, 255, 255, 0.85);
+  border-right: 3px solid rgba(255, 255, 255, 0.95);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.95);
   transform: rotate(45deg);
   animation: arrowBounce 2s infinite;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
 @keyframes arrowBounce {
   0%, 100% {
@@ -1327,8 +1329,9 @@ ul { list-style: none; }
   .scroll-arrow {
     width: 32px;
     height: 32px;
-    border-right-width: 3px;
-    border-bottom-width: 3px;
+    border-right: 4px solid rgba(255, 255, 255, 1);
+    border-bottom: 4px solid rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.7));
   }
 
   .projects-grid,
