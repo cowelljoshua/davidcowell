@@ -82,6 +82,10 @@ ul { list-style: none; }
   padding: 0 24px;
 }
 
+.section > .container {
+  padding-top: 80px;
+}
+
 /* ---------- Placeholder Images ---------- */
 .placeholder-img {
   width: 100%;
@@ -393,7 +397,7 @@ ul { list-style: none; }
    SECTIONS
    ============================================================ */
 .section {
-  padding: 220px 0 100px;
+  padding: 180px 0 100px;
   flex: 1 0 auto;
   min-height: 100vh;
   display: flex;
@@ -410,6 +414,7 @@ ul { list-style: none; }
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 16px;
+  margin-top: 0;
   color: var(--navy);
   font-weight: 700;
   letter-spacing: -1px;
