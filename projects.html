@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Management | David Cowell, PE</title>
+  <title>Projects | David Cowell, PE</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,34 +28,341 @@
     </div>
   </nav>
 
-  <!-- ===================== PROJECT MANAGEMENT ===================== -->
-  <section id="project-management" class="section">
+  <!-- ===================== FEATURED PROJECTS ===================== -->
+  <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Project Management</h2>
-      <p class="section-subtitle">City of Wilmington Engineering</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Wilmington Riverfront & Public Infrastructure Capital Projects</p>
 
-      <div class="subpage-cards">
-        <a href="capital-project-delivery.html" class="subpage-card">
-          <div class="subpage-img">
-            <img src="images2/CPD-01.JPG" alt="Capital Project Delivery">
-          </div>
-          <div class="subpage-info">
-            <h3>Capital Project Delivery</h3>
-            <p>Over $250M in public infrastructure capital projects including streets, buildings, parks, bridges, trails, and stormwater systems.</p>
-            <span class="subpage-link">View Gallery &rarr;</span>
-          </div>
-        </a>
+      <!-- Category Filter -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="riverfront">Riverfront</button>
+        <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        <button class="filter-btn" data-filter="parks">Parks</button>
+      </div>
 
-        <a href="riverfront-projects.html" class="subpage-card">
-          <div class="subpage-img">
-            <img src="images2/Riverwalk-South.jpg" alt="Featured Riverfront Projects">
+      <div class="projects-grid">
+
+        <!-- Port City Marina Riverwalk -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Port City Marina"></div>
           </div>
-          <div class="subpage-info">
-            <h3>Featured Riverfront Projects</h3>
-            <p>Riverwalk design, bulkhead replacement, foundation repair, and urban design along the Wilmington riverfront.</p>
-            <span class="subpage-link">View Projects &rarr;</span>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Port City Marina Riverwalk</h3>
+            <p>A public/private partnership extended the Riverwalk to the foot of Hamlet St. Concrete roadway, dock, and plaza infrastructure was built along the north side of the marina just south of Water St.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2021</span>
+              <span><strong>Cost:</strong> $5,533,309</span>
+            </div>
           </div>
-        </a>
+        </article>
+
+        <!-- Visitor Center Park -->
+        <article class="project-card" data-category="parks">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Visitor Center Park"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Parks</span>
+            <h3>Visitor Center Park</h3>
+            <p>Renovation of the park with new play area elements. River views and open space will be restored. Public safety will be enhanced. The nautical flags will spell "Wilmington".</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2022</span>
+              <span><strong>Cost:</strong> $373,000</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Water Street: Princess to Walnut -->
+        <article class="project-card" data-category="infrastructure">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Water Street"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Infrastructure</span>
+            <h3>Water Street: Princess Street to Walnut Street</h3>
+            <p>The Riverwalk was widened along Water Street near the Coast Guard dock. Construction was coordinated with the Water St. Parking Deck redevelopment.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2021</span>
+              <span><strong>Cost:</strong> $4,719,000</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Conlon Pier Cofferdam Repair -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Conlon Pier Repair"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Conlon Pier Cofferdam Repair</h3>
+            <p>Pedestrian platform reconstruction. Severe corrosion of the steel walls required reconstruction of the circular pedestrian observation platform.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2020</span>
+              <span><strong>Cost:</strong> $505,000</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Coastline Inn Bulkhead -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Coastline Inn"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Coastline Inn Bulkhead</h3>
+            <p>The timber decking and benches at the Coastline Inn boardwalk were installed in 1998. A steel bulkhead and boardwalk reconstruction were completed in 2017.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2017</span>
+              <span><strong>Cost:</strong> $772,000</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dean Hardwoods Riverwalk -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Dean Hardwoods"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Dean Hardwoods Riverwalk</h3>
+            <p>Reaching through the tidal marsh to the Isabel Holmes Bridge, this is a great place for a quiet stroll. Pile-supported timber boardwalk (approx. 820 ft).</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2010</span>
+              <span><strong>Cost:</strong> $1,143,822</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Harnett St./Cowan St. Riverwalk -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Harnett Cowan"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Harnett St./Cowan St. Riverwalk</h3>
+            <p>The long-awaited connection to the Dean Hardwoods Riverwalk at Sawmill Point has been completed! Pile-supported timber boardwalk (approx. 1,100 ft).</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2017</span>
+              <span><strong>Cost:</strong> $2,250,006</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Water St Park: Market St Intersection -->
+        <article class="project-card" data-category="infrastructure">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Market St Intersection"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Infrastructure</span>
+            <h3>Water St Park: Market St Intersection</h3>
+            <p>The ambitious recreation of Water Street Park was born out of the need for major improvement projects at the Market Street intersection. Streetscape & utilities from Market St. to Princess St.; and a pier reconstruction.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2017</span>
+              <span><strong>Cost:</strong> $2,300,000</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Convention Center Riverwalk -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Convention Center"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Convention Center Riverwalk</h3>
+            <p>The Riverwalk wraps around the Convention Center as an integral feature of the facility. Careful design preserved a 400+ year old Live Oak tree. Multiple phases: 2011, 2013, 2017.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2017</span>
+              <span><strong>Cost:</strong> $1,939,456</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Brooks Building Riverwalk -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Brooks Building"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Brooks Building Riverwalk</h3>
+            <p>The original boardwalk was built on the old concrete dock extending from the building. In 2016, the deteriorated concrete was demolished and replaced by a free-standing Riverwalk. Free-standing pile-supported timber boardwalk.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2017</span>
+              <span><strong>Cost:</strong> $1,002,007</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Market Street Wharf Foundation Repair -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Market Wharf"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Market Street Wharf Foundation Repair</h3>
+            <p>In 2012 the City's Dock Master, RT Jones, alerted the City to a serious tripping hazard. The corroded steel piles supporting the heavy concrete platform under Market Street had begun to buckle. Drivers dragged heavy posts through the dark deck.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2013</span>
+              <span><strong>Cost:</strong> $970,565</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Water Street Emergency Repairs -->
+        <article class="project-card" data-category="infrastructure">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Water St Emergency"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Infrastructure</span>
+            <h3>Water Street Emergency Repairs</h3>
+            <p>Injection of an expanding structural polymer to stabilize soil loss under bulkhead. Contractors injected a polymer into the soil to stop erosion of soil through a breach in the bulkhead.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2013</span>
+              <span><strong>Cost:</strong> $92,038</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pocket Parks Shoreline Stabilization -->
+        <article class="project-card" data-category="parks">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Pocket Parks"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Parks</span>
+            <h3>Pocket Parks Shoreline Stabilization</h3>
+            <p>Building along a historic riverfront, which dates to the colonial era, presents challenges. Soil stabilization at Mulder's Alley Pocket Park and Ann Street. An old concrete bulkhead failed and began to push against the Riverwalk.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2013</span>
+              <span><strong>Cost:</strong> $565,573</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Conlon Pier Riverwalk: Olde Port -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Conlon Pier"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Conlon Pier Riverwalk: Olde Port</h3>
+            <p>In 2004, looking north toward the dilapidated Almont shopping site, developer Dean Scarinzi said the project was ridiculed as the "Riverwalk to Nowhere". Pier renovation & Riverwalk extension from Coastline Inn.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2002-2013</span>
+              <span><strong>Cost:</strong> $1,250,000</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Governor's Landing Bulkhead Replacement -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Governor's Bulkhead"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Governor's Landing Bulkhead Replacement</h3>
+            <p>The City accepted ownership of the Riverwalk at Governor's Landing with the understanding that a new steel bulkhead would need to be installed to replace the original developer-installed timber bulkhead.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2008</span>
+              <span><strong>Cost:</strong> $311,890</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Governor's Landing Foundation Repair -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Governor's Foundation"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Governor's Landing Riverwalk Foundation Repair</h3>
+            <p>Helical anchor piles to replace original developer-installed timber piles. Settlement of the original developer-installed timber piles necessitated the installation of helical anchor piles to restore the Riverwalk.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2011</span>
+              <span><strong>Cost:</strong> $127,822</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Visitor Center Bulkhead -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Visitor Bulkhead"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Visitor Center Bulkhead</h3>
+            <p>In 2009 a sinkhole developed under Water Street near the Visitor Center. An underground investigation revealed that the concrete retaining wall had been undermined by erosion. An emergency project was initiated to install a new steel bulkhead.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2009</span>
+              <span><strong>Cost:</strong> $1,174,724</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hilton Bulkhead & Riverwalk -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Hilton"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Hilton Bulkhead & Riverwalk</h3>
+            <p>During demolition of the original beachwalk, the old bulkhead began to fail. The contractor's quick action even rescued the hotel's pool. Steel bulkhead and pile-supported timber boardwalk.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2008</span>
+              <span><strong>Cost:</strong> $4,210,227</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Riverwalk South -->
+        <article class="project-card" data-category="riverfront">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Riverwalk South"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Riverfront</span>
+            <h3>Riverwalk South</h3>
+            <p>Adding linear Riverwalk projects, Riverwalk South created a tourist destination along the historic shoreline. Multiple phases from 2002-2005 constructed the southern extension of the downtown Riverwalk.</p>
+            <div class="project-meta">
+              <span><strong>Completed:</strong> 2002-2005</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Water St Park: Market St to Princess St (Future) -->
+        <article class="project-card" data-category="infrastructure">
+          <div class="project-img">
+            <div class="placeholder-img" data-label="Future Project"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Infrastructure</span>
+            <h3>Water St Park: Market St to Princess St</h3>
+            <p>Streetscape & Park improvements near the federal courthouse. Future project to enhance the corridor from Princess Street to Market Street with improved landscaping and amenities.</p>
+            <div class="project-meta">
+              <span><strong>Status:</strong> Future</span>
+              <span><strong>Est. Cost:</strong> $1,820,000</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
