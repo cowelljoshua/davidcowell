@@ -159,10 +159,10 @@ ul { list-style: none; }
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 36px;
-  max-width: 1400px;
-  width: 100%;
+  max-width: none;
+  width: fit-content;
   margin: 0;
   padding: 6px 32px;
   /* Glassmorphism effect */
@@ -210,9 +210,6 @@ ul { list-style: none; }
   gap: 32px;
   align-items: center;
   list-style: none;
-  flex: 1;
-  justify-content: center;
-  margin-right: 200px;
 }
 .nav-links li a {
   color: rgba(255,255,255,0.8);
