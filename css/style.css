@@ -393,11 +393,11 @@ ul { list-style: none; }
    SECTIONS
    ============================================================ */
 .section {
-  padding: 200px 0 100px;
+  padding: 140px 0 100px;
   flex: 1 0 auto;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .section-alt {
   background: var(--off-white);

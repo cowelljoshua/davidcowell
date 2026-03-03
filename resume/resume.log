@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.18)  2 MAR 2026 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.18)  3 MAR 2026 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -467,40 +467,40 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 8
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-06.
+16.
 
 (C:\Users\joshu\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-06.
+16.
 
 (C:\Users\joshu\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-106.
+116.
 
 (C:\Users\joshu\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-106.
+116.
 
 (C:\Users\joshu\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 106.
+(Font)              <10> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 106.
+(Font)              <7> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 106.
+(Font)              <5> on input line 116.
  [1
 
 {C:/Users/joshu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/josh
 u/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/joshu/Ap
-pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (resume.aux)
+pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2] (resume.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -509,21 +509,21 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: AAC602E51FAA51D35F7C3DB4202B64F9;658.
  ) 
 Here is how much of TeX's memory you used:
- 10246 strings out of 474486
- 160764 string characters out of 5743755
- 1945542 words of memory out of 5000000
- 32402 multiletter control sequences out of 15000+600000
- 592465 words of font info for 55 fonts, out of 8000000 for 9000
+ 10249 strings out of 474486
+ 160795 string characters out of 5743755
+ 1946542 words of memory out of 5000000
+ 32403 multiletter control sequences out of 15000+600000
+ 592882 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,391b,430s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,391b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
 ><C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
 >
-Output written on resume.pdf (1 page, 115850 bytes).
+Output written on resume.pdf (2 pages, 119964 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
