@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.18)  3 MAR 2026 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.18)  3 MAR 2026 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,30 +500,40 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {C:/Users/joshu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/josh
 u/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/joshu/Ap
-pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2] (resume.aux)
+pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (resume.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: AAC602E51FAA51D35F7C3DB4202B64F9;658.
+
+
+Package rerunfilecheck Warning: File `resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume.out':
+(rerunfilecheck)             Before: AAC602E51FAA51D35F7C3DB4202B64F9;658
+(rerunfilecheck)             After:  840E0C5AF799C0ADD1E92BF0AA556EDE;527.
  ) 
 Here is how much of TeX's memory you used:
- 10249 strings out of 474486
- 160795 string characters out of 5743755
- 1946542 words of memory out of 5000000
+ 10248 strings out of 474486
+ 160789 string characters out of 5743755
+ 1944542 words of memory out of 5000000
  32403 multiletter control sequences out of 15000+600000
  592882 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,391b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
-b><C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
-><C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
->
-Output written on resume.pdf (2 pages, 119964 bytes).
+ 75i,8n,79p,378b,430s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+<C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
+<C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb>
+<C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><
+C:/Users/joshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
+Output written on resume.pdf (1 page, 116954 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 59 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
