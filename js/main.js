@@ -7,15 +7,35 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Navbar (no scroll effect for floating navbar) ----
   const navbar = document.getElementById('navbar');
 
+  // ---- Scroll indicator ----
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
   // ---- Mobile menu toggle ----
   const toggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const heroMenuBtn = document.getElementById('hero-menu-btn');
 
   if (toggle && navLinks) {
     toggle.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       toggle.classList.toggle('open');
     });
+
+    // Hero menu button functionality
+    if (heroMenuBtn) {
+      heroMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        toggle.classList.toggle('open');
+      });
+    }
 
     // Close menu when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
@@ -27,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (!navbar.contains(e.target)) {
+      if (!navbar.contains(e.target) && e.target !== heroMenuBtn) {
         navLinks.classList.remove('open');
         toggle.classList.remove('open');
       }
