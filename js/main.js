@@ -24,32 +24,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroMenuBtn = document.getElementById('hero-menu-btn');
 
   if (toggle && navLinks) {
+    const setMenuOpen = (isOpen) => {
+      navLinks.classList.toggle('open', isOpen);
+      toggle.classList.toggle('open', isOpen);
+      if (heroMenuBtn) heroMenuBtn.classList.toggle('is-hidden', isOpen);
+    };
+
     toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      toggle.classList.toggle('open');
+      setMenuOpen(!navLinks.classList.contains('open'));
     });
 
     // Hero menu button functionality
     if (heroMenuBtn) {
       heroMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        toggle.classList.toggle('open');
+        setMenuOpen(!navLinks.classList.contains('open'));
       });
     }
 
     // Close menu when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        toggle.classList.remove('open');
-      });
+      link.addEventListener('click', () => setMenuOpen(false));
     });
 
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (!navbar.contains(e.target) && e.target !== heroMenuBtn) {
-        navLinks.classList.remove('open');
-        toggle.classList.remove('open');
+        setMenuOpen(false);
       }
     });
   }
@@ -158,13 +158,35 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // ---- Contact form (placeholder handler) ----
+  // ---- Contact form (Netlify Forms AJAX submission) ----
   const form = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Thank you for your message! David will get back to you soon.');
-      form.reset();
+      const data = new FormData(form);
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      formStatus.textContent = '';
+      formStatus.className = 'form-status';
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString(),
+      })
+        .then(() => {
+          form.reset();
+          formStatus.textContent = 'Thanks! Your message has been sent — David will get back to you soon.';
+          formStatus.classList.add('success');
+        })
+        .catch(() => {
+          formStatus.textContent = 'Something went wrong sending your message. Please email davidericcowell@gmail.com directly.';
+          formStatus.classList.add('error');
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+        });
     });
   }
 

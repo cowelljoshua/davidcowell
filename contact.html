@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | David Cowell, PE</title>
+  <meta name="description" content="Get in touch with David Cowell, PE — Senior Water/Wastewater Project Manager at HDR in Wilmington, NC.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | David Cowell, PE">
+  <meta property="og:description" content="Get in touch with David Cowell, PE — Senior Water/Wastewater Project Manager at HDR in Wilmington, NC.">
+  <meta property="og:image" content="https://davidcowell.com/images/headshot.jpg">
+  <meta property="og:url" content="https://davidcowell.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="contact-page">
 
@@ -32,28 +43,56 @@
   <section id="contact" class="section section-dark">
     <div class="container">
       <h2 class="section-title light">Get in Touch</h2>
-      <div class="contact-info-full">
-        <div class="contact-item">
-          <span class="contact-icon">&#128222;</span>
-          <div>
-            <h4>Phone</h4>
-            <a href="tel:9104315906">(910) 431-5906</a>
+      <p class="contact-lead">Open to conversations about water/wastewater and public infrastructure project management opportunities. Reach out directly or send a message below.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22 6 12 13 2 6"></polyline>
+              </svg>
+            </span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:davidericcowell@gmail.com">davidericcowell@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </span>
+            <div>
+              <h4>Location</h4>
+              <p>Leland, NC 28451</p>
+            </div>
           </div>
         </div>
-        <div class="contact-item">
-          <span class="contact-icon">&#128231;</span>
-          <div>
-            <h4>Email</h4>
-            <a href="mailto:davidericcowell@gmail.com">davidericcowell@gmail.com</a>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" id="contactForm">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden-field">
+            <label>Don&rsquo;t fill this out if you&rsquo;re human: <input name="bot-field"></label>
+          </p>
+          <div class="form-group">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
           </div>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">&#128205;</span>
-          <div>
-            <h4>Location</h4>
-            <p>Leland, NC 28451</p>
+          <div class="form-group">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
