@@ -158,38 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // ---- Contact form (Netlify Forms AJAX submission) ----
-  const form = document.getElementById('contactForm');
-  const formStatus = document.getElementById('formStatus');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const submitBtn = form.querySelector('button[type="submit"]');
-      submitBtn.disabled = true;
-      formStatus.textContent = '';
-      formStatus.className = 'form-status';
-
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(data).toString(),
-      })
-        .then(() => {
-          form.reset();
-          formStatus.textContent = 'Thanks! Your message has been sent — David will get back to you soon.';
-          formStatus.classList.add('success');
-        })
-        .catch(() => {
-          formStatus.textContent = 'Something went wrong sending your message. Please email davidericcowell@gmail.com directly.';
-          formStatus.classList.add('error');
-        })
-        .finally(() => {
-          submitBtn.disabled = false;
-        });
-    });
-  }
-
   // ---- Add active class to current page nav link ----
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinkElements = document.querySelectorAll('.nav-links a');

@@ -412,6 +412,12 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   padding: 140px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.section.section-dark#contact > .container {
+  position: relative;
+  z-index: 1;
 }
 .section-alt {
   background: var(--off-white);
@@ -1420,6 +1426,14 @@ ul { list-style: none; }
 /* ============================================================
    CONTACT
    ============================================================ */
+.contact-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('../images/landing_page.jpg') center/cover no-repeat;
+  opacity: .22;
+  z-index: 0;
+}
+
 .contact-lead {
   text-align: center;
   color: rgba(255, 255, 255, .68);
@@ -1429,22 +1443,14 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: .85fr 1.15fr;
-  gap: 64px;
-  margin-top: 0;
-  max-width: 980px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: start;
-}
-
-.contact-info-col {
+.contact-info-row {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding-top: 4px;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .contact-item {
@@ -1482,55 +1488,6 @@ ul { list-style: none; }
   font-size: 1rem;
 }
 .contact-item a:hover { color: var(--gold); }
-
-.contact-form .form-group {
-  margin-bottom: 18px;
-}
-.contact-form label {
-  display: block;
-  font-size: .82rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  color: rgba(255, 255, 255, .55);
-  margin-bottom: 8px;
-}
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 14px 18px;
-  border: 2px solid rgba(255,255,255,.15);
-  border-radius: 6px;
-  background: rgba(255,255,255,.06);
-  color: var(--white);
-  font-size: .95rem;
-  font-family: 'Open Sans', sans-serif;
-  transition: border-color var(--transition);
-}
-.contact-form textarea { resize: vertical; min-height: 120px; }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: rgba(255,255,255,.4);
-}
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: var(--blue);
-}
-.contact-form .hidden-field {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.form-status {
-  margin-top: 14px;
-  font-size: .9rem;
-  min-height: 1.2em;
-}
-.form-status.success { color: #7fd99a; }
-.form-status.error { color: #f0a0a0; }
 
 /* ============================================================
    FOOTER
@@ -1647,7 +1604,7 @@ ul { list-style: none; }
   .expertise-item { flex-basis: 100%; max-width: 100%; }
   .subpage-card { flex-basis: 100%; max-width: 100%; }
   .education-grid { grid-template-columns: 1fr; gap: 32px; }
-  .contact-grid  { grid-template-columns: 1fr; gap: 40px; }
+  .contact-info-row { flex-direction: column; align-items: center; gap: 32px; }
 }
 
 @media (max-width: 768px) {

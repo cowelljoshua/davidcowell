@@ -41,58 +41,36 @@
 
   <!-- ===================== CONTACT ===================== -->
   <section id="contact" class="section section-dark">
+    <div class="contact-bg-overlay"></div>
     <div class="container">
       <h2 class="section-title light">Get in Touch</h2>
-      <p class="contact-lead">Open to conversations about water/wastewater and public infrastructure project management opportunities. Reach out directly or send a message below.</p>
+      <p class="contact-lead">Open to conversations about water/wastewater and public infrastructure project management opportunities.</p>
 
-      <div class="contact-grid">
-        <div class="contact-info-col">
-          <div class="contact-item">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22 6 12 13 2 6"></polyline>
-              </svg>
-            </span>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:davidericcowell@gmail.com">davidericcowell@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </span>
-            <div>
-              <h4>Location</h4>
-              <p>Leland, NC 28451</p>
-            </div>
+      <div class="contact-info-row">
+        <div class="contact-item">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22 6 12 13 2 6"></polyline>
+            </svg>
+          </span>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:davidericcowell@gmail.com">davidericcowell@gmail.com</a>
           </div>
         </div>
-
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" id="contactForm">
-          <input type="hidden" name="form-name" value="contact">
-          <p class="hidden-field">
-            <label>Don&rsquo;t fill this out if you&rsquo;re human: <input name="bot-field"></label>
-          </p>
-          <div class="form-group">
-            <label for="cf-name">Name</label>
-            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+        <div class="contact-item">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </span>
+          <div>
+            <h4>Location</h4>
+            <p>Leland, NC 28451</p>
           </div>
-          <div class="form-group">
-            <label for="cf-email">Email</label>
-            <input type="email" id="cf-email" name="email" autocomplete="email" required>
-          </div>
-          <div class="form-group">
-            <label for="cf-message">Message</label>
-            <textarea id="cf-message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
-        </form>
+        </div>
       </div>
     </div>
   </section>
